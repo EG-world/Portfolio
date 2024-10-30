@@ -19,19 +19,20 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <div>
-            <img src="./images/LeeEuGene.ico" alt="logo">
-            <h1><a href="#">LeeEuGene</a></h1>
+    <header class="header">
+        <!-- BEM (Box Element Modifier) -->
+        <div class="header__logo">
+            <img class="header__logo__img" src="./images/LeeEuGene.ico" alt="logo">
+            <h1 class="header__logo__title"><a href="#">LeeEuGene</a></h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skill</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#license">Licence</a></li>
-                <li><a href="#contact">contact</a></li>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a href="#home" class="header__menu__item active">Home</a></li>
+                <li><a href="#about" class="header__menu__item">About</a></li>
+                <li><a href="#skills" class="header__menu__item">Skill</a></li>
+                <li><a href="#portfolio" class="header__menu__item">Portfolio</a></li>
+                <li><a href="#license" class="header__menu__item">Licence</a></li>
+                <li><a href="#contact" class="header__menu__item">contact</a></li>
             </ul>
         </nav>
     </header>
@@ -46,9 +47,9 @@
         </section>
 
         <!-- About -->
-        <section id="about">
-            <h2>이유진</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut illo nemo veniam eaque, vel reiciendis soluta earum eveniet odit quia architecto quis praesentium dolore iure nihil aspernatur dolores mollitia?</p>
+        <section id="about" class="section max-container">
+            <h2 class="title">이유진</h2>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut illo nemo veniam eaque, vel reiciendis soluta earum eveniet odit quia architecto quis praesentium dolore iure nihil aspernatur dolores mollitia?</p>
             <ul>
                 <li>
                     <i class="fa-brands fa-html5"></i>
@@ -85,150 +86,154 @@
         </section>
 
         <!-- Skills -->
-        <section id="skills">
-            <h2>Skills</h2>
-            <p>기술</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolores, fugiat soluta voluptate commodi odit! Accusantium repudiandae corporis laborum cum ab consectetur doloribus alias dolor debitis, ipsa culpa ex impedit?</p>
-            <div>
-                <section>
-                    <h3>코딩 기술</h3>
-                    <ul>
-                        <li>
-                            <div><span>Python</span><span>98%</span></div>
-                            <div><div style="width: 98%"></div></div>
-                        </li>
-                        <li>
-                            <div><span>Java</span><span>85%</span></div>
-                            <div><div style="width: 85%"></div></div>
-                        </li>
-                        <li>
-                            <div><span>JavaScript</span><span>70%</span></div>
-                            <div><div style="width: 70%"></div></div>
-                        </li>
-                        <li>
-                            <div><span>HTML</span><span>80%</span></div>
-                            <div><div style="width: 80%"></div></div>
-                        </li>
-                        <li>
-                            <div><span>React</span><span>70%</span></div>
-                            <div><div style="width: 70%"></div></div>
-                        </li>
-                        <li>
-                            <div><span>Node.js</span><span>70%</span></div>
-                            <div><div style="width: 70%"></div></div>
-                        </li>
-                        <li>
-                            <div><span>C,C++</span><span>50%</span></div>
-                            <div><div style="width: 50%"></div></div>
-                        </li>
-                        <li>
-                            <div><span>MySQL</span><span>82%</span></div>
-                            <div><div style="width: 82%"></div></div>
-                        </li>
-                        
-                    </ul>
-                </section>
-                <section>
-                    <h3>도구</h3>
-                    <ul>
-                        <li>Visual Studio Code</li>
-                        <li>Pycharm</li>
-                        <li>Jupyter Notebook</li>
-                        <li>Colab</li>
-                        <li>Xcode</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>기타</h3>
-                    <ul>
-                        <li>Git</li>
-                        <li>Math</li>
-                    </ul>
-                </section>
+        <section id="skills" class="section">
+            <div class="max-container">
+                <h2 class="title">Skills</h2>
+                <p class="description">기술 & 도구</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolores, fugiat soluta voluptate commodi odit! Accusantium repudiandae corporis laborum cum ab consectetur doloribus alias dolor debitis, ipsa culpa ex impedit?</p>
+                <div>
+                    <section>
+                        <h3>코딩 기술</h3>
+                        <ul>
+                            <li>
+                                <div><span>Python</span><span>98%</span></div>
+                                <div><div style="width: 98%"></div></div>
+                            </li>
+                            <li>
+                                <div><span>Java</span><span>85%</span></div>
+                                <div><div style="width: 85%"></div></div>
+                            </li>
+                            <li>
+                                <div><span>JavaScript</span><span>70%</span></div>
+                                <div><div style="width: 70%"></div></div>
+                            </li>
+                            <li>
+                                <div><span>HTML</span><span>80%</span></div>
+                                <div><div style="width: 80%"></div></div>
+                            </li>
+                            <li>
+                                <div><span>React</span><span>70%</span></div>
+                                <div><div style="width: 70%"></div></div>
+                            </li>
+                            <li>
+                                <div><span>Node.js</span><span>70%</span></div>
+                                <div><div style="width: 70%"></div></div>
+                            </li>
+                            <li>
+                                <div><span>C,C++</span><span>50%</span></div>
+                                <div><div style="width: 50%"></div></div>
+                            </li>
+                            <li>
+                                <div><span>MySQL</span><span>82%</span></div>
+                                <div><div style="width: 82%"></div></div>
+                            </li>
+                            
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>도구</h3>
+                        <ul>
+                            <li>Visual Studio Code</li>
+                            <li>Pycharm</li>
+                            <li>Jupyter Notebook</li>
+                            <li>Colab</li>
+                            <li>Xcode</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>기타</h3>
+                        <ul>
+                            <li>Git</li>
+                            <li>Math</li>
+                        </ul>
+                    </section>
+                </div>
             </div>
         </section>
 
         <!-- portfolio -->
-        <section id="work">
-            <h2>포트폴리오</h2>
-            <p>Projects</p>
-            <ul>
-                <li><button>ALL <span>10</span></button></li>
-                <li><button>Front-end <span>3</span></button></li>
-                <li><button>Mobile <span>5</span></button></li>
-                <li><button>Back-end <span>2</span></button></li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="./images/Port1.png" alt="project1">
-                        <div>
-                            <h3>ProJect #1</h3>
-                            <p>심리상담 챗봇 Chator</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="./images/Port1.png" alt="project1">
-                        <div>
-                            <h3>ProJect #1</h3>
-                            <p>심리상담 챗봇 Chator</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="./images/Port1.png" alt="project1">
-                        <div>
-                            <h3>ProJect #1</h3>
-                            <p>심리상담 챗봇 Chator</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="./images/Port1.png" alt="project1">
-                        <div>
-                            <h3>ProJect #1</h3>
-                            <p>심리상담 챗봇 Chator</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="./images/Port1.png" alt="project1">
-                        <div>
-                            <h3>ProJect #1</h3>
-                            <p>심리상담 챗봇 Chator</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="./images/Port1.png" alt="project1">
-                        <div>
-                            <h3>ProJect #1</h3>
-                            <p>심리상담 챗봇 Chator</p>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="./images/Port1.png" alt="project1">
-                        <div>
-                            <h3>ProJect #1</h3>
-                            <p>심리상담 챗봇 Chator</p>
-                        </div>
-                    </a>
-                </li>
-            </ul>
+        <section id="portfolio" class="section">
+            <div class="max-container">
+                <h2 class="title">포트폴리오</h2>
+                <p class="description">Projects</p>
+                <ul>
+                    <li><button>ALL <span>10</span></button></li>
+                    <li><button>Front-end <span>3</span></button></li>
+                    <li><button>Mobile <span>5</span></button></li>
+                    <li><button>Back-end <span>2</span></button></li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="./images/Port1.png" alt="project1">
+                            <div>
+                                <h3>ProJect #1</h3>
+                                <p>심리상담 챗봇 Chator</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="./images/Port1.png" alt="project1">
+                            <div>
+                                <h3>ProJect #1</h3>
+                                <p>심리상담 챗봇 Chator</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="./images/Port1.png" alt="project1">
+                            <div>
+                                <h3>ProJect #1</h3>
+                                <p>심리상담 챗봇 Chator</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="./images/Port1.png" alt="project1">
+                            <div>
+                                <h3>ProJect #1</h3>
+                                <p>심리상담 챗봇 Chator</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="./images/Port1.png" alt="project1">
+                            <div>
+                                <h3>ProJect #1</h3>
+                                <p>심리상담 챗봇 Chator</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="./images/Port1.png" alt="project1">
+                            <div>
+                                <h3>ProJect #1</h3>
+                                <p>심리상담 챗봇 Chator</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="./images/Port1.png" alt="project1">
+                            <div>
+                                <h3>ProJect #1</h3>
+                                <p>심리상담 챗봇 Chator</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!-- Licence -->
-        <section id="license">
-            <h2>자격증</h2>
-            <p>국가 기술 자격증</p>
+        <section id="license" class="section max-container">
+            <h2 class="title">자격증</h2>
+            <p class="description">국가 기술 자격증</p>
             <ul>
                 <li>
                     <img src="" alt="정보처리 기사">
@@ -257,17 +262,19 @@
             </a>
         </aside>
     </main>
-    
+
     <!-- Footer -->
-    <footer id="contact">
-        <h2>연락바랍니다!</h2>
-        <p>dldbwls0818@gmail.com</p>
-        <p>010-4318-4738</p>
-        <ul>
-            <li><a href="https://github.com/EG-world" target="_blank" title="깃헙"><i class="fa-brands fa-github"></i></a></li>
-            <li><a href="https://www.instagram.com/udinggyu" target="_blank" title="인스타"><i class="fa-brands fa-instagram"></i></a></li>
-        </ul>
-        <p> ⓒ Uding - All rights reserved</p>
+    <footer id="contact" class="section">
+        <div class="max-container">
+            <h2 class="title">연락바랍니다!</h2>
+            <p class="description">dldbwls0818@gmail.com</p>
+            <p class="description">010-4318-4738</p>
+            <ul>
+                <li><a href="https://github.com/EG-world" target="_blank" title="깃헙"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.instagram.com/udinggyu" target="_blank" title="인스타"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+            <p> ⓒ Uding - All rights reserved</p>
+        </div>    
     </footer>
 </body>
 </html>
