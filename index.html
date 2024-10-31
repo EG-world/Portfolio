@@ -31,7 +31,7 @@
                 <li><a href="#about" class="header__menu__item">About</a></li>
                 <li><a href="#skills" class="header__menu__item">Skill</a></li>
                 <li><a href="#portfolio" class="header__menu__item">Portfolio</a></li>
-                <li><a href="#license" class="header__menu__item">Licence</a></li>
+                <li><a href="#license" class="header__menu__item">License</a></li>
                 <li><a href="#contact" class="header__menu__item">Contact</a></li>
             </ul>
         </nav>
@@ -50,36 +50,36 @@
         <section id="about" class="section max-container">
             <h2 class="title">이유진</h2>
             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut illo nemo veniam eaque, vel reiciendis soluta earum eveniet odit quia architecto quis praesentium dolore iure nihil aspernatur dolores mollitia?</p>
-            <ul>
-                <li>
-                    <i class="fa-brands fa-html5"></i>
-                    <p>Front-end</p>
+            <ul class=majors>
+                <li class="major">
+                    <i class="fa-brands fa-html5 major__icon"></i>
+                    <p class="major__title">Front-end</p>
                     <p>HTML, CSS, JavaScript, Node.js, React</p>
                 </li>
-                <li>
-                    <i class="fa-solid fa-mobile"></i>
-                    <p>Mobile</p>
+                <li class="major">
+                    <i class="fa-solid fa-mobile major__icon"></i>
+                    <p class="major__title">Mobile</p>
                     <p>React-Native, Android, ios, Kotlin</p>
                 </li>
-                <li>
-                    <i class="fa-solid fa-server"></i>
-                    <p>Back-end</p>
+                <li class="major">
+                    <i class="fa-solid fa-server major__icon"></i>
+                    <p class="major__title">Back-end</p>
                     <p>Node.js, fastAPI, Java, GraphQL</p>
                 </li>
             </ul>    
-            <ul>
-                <li>
-                    <img src="./images/apple.png" alt="Apple">
+            <ul class="jobs">
+                <li class="job">
+                    <img class="job__img" src="./images/apple.png" alt="Apple">
                     <div>
-                        <p>Apple OCR 개발자</p>
-                        <p>2019 ~ 2022</p>
+                        <p class="job__name">Apple OCR 개발자</p>
+                        <p class="job__period">2019 ~ 2022</p>
                     </div>
                 </li>
-                <li>
-                    <img src="./images/skt t1.png" alt="SKT T1">
+                <li class="job">
+                    <img class="job__img" src="./images/skt t1.png" alt="SKT T1">
                     <div>
-                        <p>SKT T1 프로게이머</p>
-                        <p>2022 ~ 2024</p>
+                        <p class="job__name">SKT T1 프로게이머</p>
+                        <p class="job__period">2022 ~ 2024</p>
                     </div>
                 </li>
             </ul>    
@@ -89,49 +89,81 @@
         <section id="skills" class="section">
             <div class="max-container">
                 <h2 class="title">Skills</h2>
-                <p class="description">기술 & 도구</p>
+                <p class="description">언어 & 도구</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste dolores, fugiat soluta voluptate commodi odit! Accusantium repudiandae corporis laborum cum ab consectetur doloribus alias dolor debitis, ipsa culpa ex impedit?</p>
-                <div>
-                    <section>
-                        <h3>코딩 기술</h3>
+                <div class="skills">
+                    <section class="skills__lang">
+                        <h3 class="skills__title">언어</h3>
                         <ul>
-                            <li>
-                                <div><span>Python</span><span>98%</span></div>
-                                <div><div style="width: 98%"></div></div>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>Python</span><span>98%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 98%"></div>
+                                </div>
                             </li>
-                            <li>
-                                <div><span>Java</span><span>85%</span></div>
-                                <div><div style="width: 85%"></div></div>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>Java</span><span>85%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 85%"></div>
+                                </div>
                             </li>
-                            <li>
-                                <div><span>JavaScript</span><span>70%</span></div>
-                                <div><div style="width: 70%"></div></div>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>JavaScript</span><span>70%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 70%"></div>
+                                </div>
                             </li>
-                            <li>
-                                <div><span>HTML</span><span>80%</span></div>
-                                <div><div style="width: 80%"></div></div>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>HTML</span><span>80%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 80%"></div>
+                                </div>
                             </li>
-                            <li>
-                                <div><span>React</span><span>70%</span></div>
-                                <div><div style="width: 70%"></div></div>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>React</span><span>70%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 70%"></div>
+                                </div>
                             </li>
-                            <li>
-                                <div><span>Node.js</span><span>70%</span></div>
-                                <div><div style="width: 70%"></div></div>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>Node.js</span><span>70%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 70%"></div>
+                                </div>
                             </li>
-                            <li>
-                                <div><span>C,C++</span><span>50%</span></div>
-                                <div><div style="width: 50%"></div></div>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>C,C++</span><span>50%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 50%"></div>
+                                </div>
                             </li>
-                            <li>
-                                <div><span>MySQL</span><span>82%</span></div>
-                                <div><div style="width: 82%"></div></div>
+                            <li class="bar">
+                                <div class="bar__metadata">
+                                    <span>MySQL</span><span>82%</span>
+                                </div>
+                                <div class="bar__bg">
+                                    <div class="bar__value" style="width: 82%"></div>
+                                </div>
                             </li>
                             
                         </ul>
                     </section>
-                    <section>
-                        <h3>도구</h3>
+                    <section class="skills__tools">
+                        <h3 class="skills__title">도구</h3>
                         <ul>
                             <li>Visual Studio Code</li>
                             <li>Pycharm</li>
@@ -140,8 +172,8 @@
                             <li>Xcode</li>
                         </ul>
                     </section>
-                    <section>
-                        <h3>기타</h3>
+                    <section class="skill__etc">
+                        <h3 class="skills__title">기타</h3>
                         <ul>
                             <li>Git</li>
                             <li>Math</li>
@@ -156,72 +188,97 @@
             <div class="max-container">
                 <h2 class="title">포트폴리오</h2>
                 <p class="description">Projects</p>
-                <ul>
-                    <li><button>ALL <span>10</span></button></li>
-                    <li><button>Front-end <span>3</span></button></li>
-                    <li><button>Mobile <span>5</span></button></li>
-                    <li><button>Back-end <span>2</span></button></li>
+                <ul class="categories">
+                    <li>
+                        <button class="category category--selected">ALL 
+                            <span class="category__count">10</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="category">Front-end 
+                            <span class="category__count">3</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="category">Mobile 
+                            <span class="category__count">5</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="category">Back-end 
+                            <span class="category__count">2</span>
+                        </button>
+                    </li>
                 </ul>
-                <ul>
-                    <li>
+                <ul class="projects">
+                    <li class="project">
                         <a href="#" target="_blank">
-                            <img src="./images/Port1.png" alt="project1">
-                            <div>
-                                <h3>ProJect #1</h3>
+                            <img src="./images/Port1.png" alt="project1" class="project__img">
+                            <div class="project__metadata">
+                                <h3 class="project__title">ProJect #1</h3>
                                 <p>심리상담 챗봇 Chator</p>
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="project">
                         <a href="#" target="_blank">
-                            <img src="./images/Port1.png" alt="project1">
-                            <div>
-                                <h3>ProJect #1</h3>
+                            <img src="./images/Port1.png" alt="project1" class="project__img">
+                            <div class="project__metadata">
+                                <h3 class="project__title">ProJect #1</h3>
                                 <p>심리상담 챗봇 Chator</p>
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="project">
                         <a href="#" target="_blank">
-                            <img src="./images/Port1.png" alt="project1">
-                            <div>
-                                <h3>ProJect #1</h3>
+                            <img src="./images/Port1.png" alt="project1" class="project__img">
+                            <div class="project__metadata">
+                                <h3 class="project__title">ProJect #1</h3>
                                 <p>심리상담 챗봇 Chator</p>
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="project">
                         <a href="#" target="_blank">
-                            <img src="./images/Port1.png" alt="project1">
-                            <div>
-                                <h3>ProJect #1</h3>
+                            <img src="./images/Port1.png" alt="project1" class="project__img">
+                            <div class="project__metadata">
+                                <h3 class="project__title">ProJect #1</h3>
                                 <p>심리상담 챗봇 Chator</p>
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="project">
                         <a href="#" target="_blank">
-                            <img src="./images/Port1.png" alt="project1">
-                            <div>
-                                <h3>ProJect #1</h3>
+                            <img src="./images/Port1.png" alt="project1" class="project__img">
+                            <div class="project__metadata">
+                                <h3 class="project__title">ProJect #1</h3>
                                 <p>심리상담 챗봇 Chator</p>
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="project">
                         <a href="#" target="_blank">
-                            <img src="./images/Port1.png" alt="project1">
-                            <div>
-                                <h3>ProJect #1</h3>
+                            <img src="./images/Port1.png" alt="project1" class="project__img">
+                            <div class="project__metadata">
+                                <h3 class="project__title">ProJect #1</h3>
                                 <p>심리상담 챗봇 Chator</p>
                             </div>
                         </a>
                     </li>
-                    <li>
+                    <li class="project">
                         <a href="#" target="_blank">
-                            <img src="./images/Port1.png" alt="project1">
-                            <div>
-                                <h3>ProJect #1</h3>
+                            <img src="./images/Port1.png" alt="project1" class="project__img">
+                            <div class="project__metadata">
+                                <h3 class="project__title">ProJect #1</h3>
+                                <p>심리상담 챗봇 Chator</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a href="#" target="_blank">
+                            <img src="./images/Port1.png" alt="project1" class="project__img">
+                            <div class="project__metadata">
+                                <h3 class="project__title">ProJect #1</h3>
                                 <p>심리상담 챗봇 Chator</p>
                             </div>
                         </a>
@@ -230,34 +287,44 @@
             </div>
         </section>
 
-        <!-- Licence -->
+        <!-- License -->
         <section id="license" class="section max-container">
             <h2 class="title">자격증</h2>
             <p class="description">국가 기술 자격증</p>
-            <ul>
-                <li>
-                    <img src="" alt="정보처리 기사">
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, temporibus provident dignissimos aut obcaecati harum incidunt debitis modi. Reprehenderit libero quae blanditiis expedita sint fugit mollitia ex minus sit itaque!</p>
+            <ul class="licenses">
+                <li class="license">
+                    <img class="license__img" src="./images/license.jpg" alt="정보처리 기사">
+                    <div class="license__bubble">
+                        <p><a href="#" class="license__bubble__name">산업인력공단</a></p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, temporibus provident dignissimos aut obcaecati harum incidunt debitis modi. Reprehenderit libero quae blanditiis expedita sint fugit mollitia ex minus sit itaque!
+                        </p>
                     </div>
                 </li>
-                <li>
-                    <img src="" alt="정보처리 기사">
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, temporibus provident dignissimos aut obcaecati harum incidunt debitis modi. Reprehenderit libero quae blanditiis expedita sint fugit mollitia ex minus sit itaque!</p>
+                <li class="license">
+                    <img class="license__img" src="./images/license.jpg" alt="정보처리 기사">
+                    <div class="license__bubble">
+                        <p><a href="#" class="license__bubble__name">산업인력공단</a></p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, temporibus provident dignissimos aut obcaecati harum incidunt debitis modi. Reprehenderit libero quae blanditiis expedita sint fugit mollitia ex minus sit itaque!
+                        </p>
                     </div>
                 </li>
-                <li>
-                    <img src="" alt="정보처리 기사">
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, temporibus provident dignissimos aut obcaecati harum incidunt debitis modi. Reprehenderit libero quae blanditiis expedita sint fugit mollitia ex minus sit itaque!</p>
+                <li class="license">
+                    <img class="license__img" src="./images/license.jpg" alt="정보처리 기사">
+                    <div class="license__bubble">
+                        <p><a href="#" class="license__bubble__name">산업인력공단</a></p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, temporibus provident dignissimos aut obcaecati harum incidunt debitis modi. Reprehenderit libero quae blanditiis expedita sint fugit mollitia ex minus sit itaque!
+                        </p>
                     </div>
                 </li>
             </ul>
         </section>
 
+        <!-- Arrow up -->
         <aside>
-            <a href="#home" title="위로">
+            <a class="arrow-up" href="#home" title="위로">
                 <i class="fa-solid fa-arrow-up"></i>
             </a>
         </aside>
@@ -269,9 +336,9 @@
             <h2 class="title">연락바랍니다!</h2>
             <p class="description">dldbwls0818@gmail.com</p>
             <p class="description">010-4318-4738</p>
-            <ul>
-                <li><a href="https://github.com/EG-world" target="_blank" title="깃헙"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://www.instagram.com/udinggyu" target="_blank" title="인스타"><i class="fa-brands fa-instagram"></i></a></li>
+            <ul class="contact__links">
+                <li><a class="contact__link" href="https://github.com/EG-world" target="_blank" title="깃헙"><i class="fa-brands fa-github"></i></a></li>
+                <li><a class="contact__link" href="https://www.instagram.com/udinggyu" target="_blank" title="인스타"><i class="fa-brands fa-instagram"></i></a></li>
             </ul>
             <p> ⓒ Uding - All rights reserved</p>
         </div>    
