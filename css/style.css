@@ -71,7 +71,7 @@ button:focus { outline: 2px solid var(--color-accent);}
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1rem;
+    padding: 0.7rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -103,4 +103,54 @@ button:focus { outline: 2px solid var(--color-accent);}
 .header__menu__item:hover {
     border-bottom: 2px solid var(--color-accent);
     border-radius: 4px;
+}
+.active {
+    border: 1px solid var(--color-accent);
+    border-radius: 4px;
+    padding: 2px;
+}
+
+/* Home */
+#home {
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    padding: 7rem 1rem 5rem;
+    text-align: center;
+}
+
+.home__avatar {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    border: 3px solid var(--color-accent);
+    /* 이미지가 부모 요소의 크기에 맞춰 비율을 유지하면서 꽉 차도록 설정 */
+    object-fit: cover;
+}
+
+.home__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home__title--strong {
+    color: var(--color-accent);
+}
+
+.home__description {
+    font-size: 1.5rem;
+}
+
+.home__contact {
+    display: inline-block; /* 면의 속성도 가질 수 있다 공부 해야함. */
+    background-color: var(--color-accent);
+    color: var(--color-black);
+    margin: 2rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.home__contact:hover {
+    background-color: transparent;
+    color: var(--color-text);
+    outline: 2px solid var(--color-accent);
 }
