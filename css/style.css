@@ -67,7 +67,7 @@ button:focus { outline: 2px solid var(--color-accent);}
 
 /* Header */
 .header {
-    background-color: transparent;
+    background-color: var(--color-primary);
     position: fixed;
     top: 0;
     width: 100%;
