@@ -80,7 +80,7 @@ button:focus { outline: 2px solid var(--color-accent);}
 }
 
 .header--dark {
-    background-color: var(--color-accent);
+    background-color: var(--color-primary);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
 }
 

@@ -43,3 +43,24 @@ navbarToggle.addEventListener('click', () => {
 navbarMenu.addEventListener('click', () => {
     navbarMenu.classList.remove('open')
 })
+
+// menu 포커스
+const menus = document.querySelectorAll('.header__menu__item')
+
+menus.forEach(menu => {
+    menu.addEventListener('click', (e) => {
+        const filter = e.target
+        if (filter == null) {
+            return;
+        }
+        activeClassSelect(filter)
+    });
+});
+
+function activeClassSelect(target) {
+    const active = document.querySelector('.active')
+    if (active) {
+        active.classList.remove('active')
+    }
+    target.classList.add('active')
+}
